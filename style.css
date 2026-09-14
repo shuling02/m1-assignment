@@ -53,3 +53,36 @@ img {
     border-radius: 10px;
     margin: 10px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, 
+td {
+    border: 1px solid #b8d8e8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3d7fa6;
+    color: white;
+}
+
+tr: nth-child(even){
+    background-color: #f0f7fa;
+}
+
+tr:hover {
+    background-color: #e2f1f7;
+}
+
+body > img {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
