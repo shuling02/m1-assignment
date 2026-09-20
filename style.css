@@ -163,10 +163,38 @@ input[type="submit"]: hover{
     padding: 0;
 }
 
-.gallery .photo img {
+.gallery li img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     margin: 0;
     border-radius: 10px;
+}
+
+.gallery li {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery .caption {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.gallery .description {
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    visibility: hidden;
+}
+
+.gallery li:hover .description {
+    visibility: visible;
 }
