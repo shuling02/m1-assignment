@@ -198,3 +198,8 @@ input[type="submit"]: hover{
 .gallery li:hover .description {
     visibility: visible;
 }
+
+#emailInput,
+#phoneInput {
+    margin-bottom: 15px;
+}

@@ -19,34 +19,36 @@
     <form>
 
         <label for="name">Full name:</label>
-        <br>
         <input type="text" id="name" name="name">
-        <br><br>
 
-        <label for="email">Email Address:</label>
-        <br>
-        <input type="email" id="email" name="email">
-        <br><br>
+        <label for="contactMethod">How would you like us to contact you?</label>
 
-        <label for="phone">Phone Number:</label>
-        <br>
-        <input type="tel" id="phone" name="phone">
-        <br><br>
+        <select id="contactMethod" name="contactMethod">
+            <option id="selectOne" value="">Select One</option>
+            <option id="emailOption" value="email">Email</option>
+            <option id="phoneOption" value="phone">Phone</option>
+        </select>
+
+        <div id="emailInput" style="display: none;">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div id="phoneInput" style="display: none;">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
 
         <label for="pet">Which pet are you interested in?</label>
-        <br>
         <select id="pet" name="pet">
             <option value="buddy">Buddy</option>
             <option value="luna">Luna</option>
             <option value="max">Max</option>
             <option value="milo">Milo</option>
         </select>
-        <br><br>
 
         <label for="message">Tell us why you would like to adopt:</label>
-        <br>
         <textarea id="message" name="message" rows="6" cols="50"></textarea>
-        <br><br>
 
         <input type="submit" value="Submit Application">
 
@@ -66,6 +68,7 @@
      <a href="gallery.html">Pet Gallery</a>
     </p>
 
+    <script src="contact.js"></script>
 </body>
 
 </html>
